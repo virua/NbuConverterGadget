@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Конвертор валют за курсом НБУ</title>
+    <link type="text/css" href="style/default.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+	<script type="text/jscript" language="jscript">
+        // Initialize the gadget.
+        function init(){
+            System.Gadget.background = "im\\background.png";
+        }
+    </script>
+</head>
+
+<body onload="init()">
+<g:background id="imgBackground">
+    <div id="gadgetContent">
+        <h1>Конвертор валют</h1>
+        <div id="container">
+            <p>
+                З <select id="currencyListFrom"></select>
+                <img id="swop-img" src="im/swop.png" width="15" height="15" alt="Поміняти валюти місцями" title="Поміняти валюти місцями" />
+            </p>
+
+            <p>в <select id="currencyListTo"></select></p>
+
+            <p>
+                <input id="currencyValueFrom" type="text" value="" /> &nbsp;
+                <input id="currencyValueTo" type="text" value="" readonly="readonly" />
+            </p>
+
+            <p class="small-text">по курсу НБУ: <span id="coef">0.0000</span></p>
+
+            <button id="calc">Рахувати</button>
+        </div>
+    </div>
+</g:background>
+</body>
+</html>
