@@ -1,9 +1,4 @@
 NBU converter (gadget for Windows 7)
+====================================
 
-Ukr:
-Джерело даних, а саме http://lvivonline.net/exchange/currency.json,
-не працює коректно, тому на даний момент гаджет неробочий!
-
-Rus:
-Источник данных, а именно http://lvivonline.net/exchange/currency.json,
-не работает корректно!
+Currently, this gadget does not work, because the data source is not working.
